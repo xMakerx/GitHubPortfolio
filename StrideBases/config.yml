@@ -1,0 +1,62 @@
+bases:
+  castleRuins:
+    name: "&aPro"
+    lore:
+      - "&aThe largest and most secure base for your Faction."
+    schematic: castle-ruins.schematic
+  castleRabenstein:
+    name: "&2Expert"
+    lore: []
+    schematic: castle-rabenstein.schematic
+  louisdepoui:
+    name: "&eBeginner"
+    lore: []
+    schematic: louisdepoui-s-castle.schematic
+baseCompleteSound: LEVEL_UP
+
+gui:
+  buildBaseMaterial: STAINED_GLASS_PANE:13
+  builtBaseMaterial: STAINED_GLASS_PANE:14
+  emptySlotMaterial: STAINED_GLASS_PANE:15
+  donateItem:
+    material: INK_SACK:10
+    name: "&9Want more bases?"
+    lore:
+      - "Buy more bases &a&l@"
+      - "&a&nwww.stridefactions.net"
+  nextPage:
+    material: ARROW
+    name: "&aNext Page"
+    lore: []
+  backPage:
+    material: PRISMARINE_SHARD
+    name: "&cBack Page"
+    lore: []
+	
+skullItem:
+  name: 'ExtrayeaMC &a(Right-click)'
+  lore:
+    - 'Customize this message.'
+
+messages:
+  invalidRegion: "&4Error: &cYou can only build a base inside of the Wilderness!"
+  cantUndo: "&4Error: &cYou don't have any bases to undo."
+  mustBePlayer: "&4Error: &cYou must be a player to execute that command."
+  playerNotFound: "&4Error: &cThat player is not online or the name entered is invalid."
+  baseNotFound: "&4Error: &cThe base you entered is not a valid base."
+  noBasesAvailable: "&4Error: &cNo bases are available to be constructed. Purchase some at &e&nwww.stridefactions.net&r&c."
+  noPermission: "&4Error: &cYou don't have permission to execute that command."
+  cantBreak: "&4Error: &cYou can't break blocks of a base in construction."
+  invalidLocation: "&4Error: &cYou can only build bases on your Faction land."
+  gaveBase: "&aGave &e{player} &aBase &e{base}&a."
+  buildingBegan: "&aBeginning construction of base..."
+  buildingComplete: "&aBuilding is complete!"
+  clickToBuild: "&aClick to begin building your base."
+  noBases: "&cYOU HAVE NO BASES"
+  progress: "&aBase Progress:"
+  undoInfo: "&9When your base finishes construction, you may undo it if you don't like it with &b/bundo&9."
+  baseUndone: "&aSuccessfully undid base construction."
+  buildTimeout: "&cYour build session has timed out and you are no longer able to undo your base."
+  mustWait: "&4Error: &cYou must wait until the base has finished construction."
+  menuTitle: "&lBASES"
+  emptySlot: "&cEmpty Slot"

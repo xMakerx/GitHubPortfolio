@@ -1,0 +1,13 @@
+name: StrideBases
+author: xMakerx
+version: 1.0
+
+main: com.coginvasion.stridebases.StrideBases
+depend: [Factions]
+
+commands:
+  bases:
+    description: The base command for StrideBases.
+    permission: stridebases.bases
+  bundo:
+    description: Undo a base you have constructed.

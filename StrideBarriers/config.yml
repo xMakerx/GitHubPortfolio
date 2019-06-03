@@ -1,0 +1,69 @@
+# - StrideBarriers [v1.0] Default Configuration File - #
+barriers:
+  basic:
+    color: GREEN
+    cost: 100
+    durability: 10
+  normal:
+    color: YELLOW
+    cost: 200
+    durability: 15
+  durable:
+    color: RED
+    cost: 320
+    durability: 20
+
+toolMat: BLAZE_ROD
+toolName: "&aBarrier Wand"
+emptySlotMat: STAINED_GLASS_PANE:15
+removeBarrierMat: BARRIER
+barrierBuiltSound: LEVEL_UP
+barrierDestroyedSound: ENDERDRAGON_DEATH
+
+infoHead:
+  owner: "MHF_exclamation"
+  name: "&a&l(!) Information"
+  lore: []
+
+messages:
+  noPermission: "&4Error: &cYou don't have permission to execute that command."
+  invalidRegion: "&4Error: &cYou can't create a barrier in this area."
+  cantAfford: "&4Error: &cYou can't afford to construct a barrier of that type."
+  clearInventory: "&4Error: &cPlease clear your inventory to make room for the barrier tool."
+  cantDrop: "&4Error: &cYou can't drop this item!"
+  inventoryOpen: "&4Error: &cYou can't open inventories with the edit wand!"
+  noSession: "&4Error: &cYou aren't planning the construction of a barrier."
+  mustHaveFaction: "&4Error: &cYou must be in a Faction to create a barrier."
+  mustBeLeader: "&4Error: &cYou must be the leader of your Faction to create a barrier."
+  mustBeInFactionLand: "&4Error: &cYou can only build inside of your Faction land."
+  incompleteSelection: "&4Error: &cYou haven't selected two points yet!"
+  barrierInProgress: "&4Error: &cYou can't cancel a barrier that's currently constructing."
+  cantBreak: "&4Error: &cYou can't break a barrier by hand!"
+  cantEnter: "&4Error: &cYou can't enter another Faction's barrier!"
+  noBarrier: "&4Error: &cYour Faction doesn't have a barrier!"
+  barrierDamaged: "&cYour barrier is being damaged! Health: &6{health}&c/&a{maxHealth}&c."
+  factionName: "&a&l{faction}"
+  barrierDestroyed: "Your barrier has been destroyed!"
+  sessionCanceled: "&aCanceled your barrier session. You have not been charged."
+  barrierCreated: "&aSuccessfully created a new barrier!"
+  barrierAlreadyBuilt: "&cBARRIER ALREADY BUILT"
+  notLeader: "&cYOU MUST BE A FACTION LEADER"
+  amtDeducted: "&aDeducted &6${cost} &afrom your account."
+  progress: "&aBarrier Progress:"
+  barrierStarted: "&aBeginning construction of barrier..."
+  barrierComplete: "&aCompleted construction of barrier!"
+  menuTitle: "&lBARRIERS"
+  barrierActive: "&cBARRIER ALREADY BUILT"
+  barrierRemove: "&cRemove Barrier"
+  barrierAccept: "&aAccept Removal"
+  barrierCancel: "&cCancel Removal"
+  price: "Price: &e${price}"
+  firstPoint: "&aFirst point of barrier selected!"
+  secondPoint: "&aSecond point of barrier selected!"
+  beginSelection: "&2To create the region for your barrier, left-click the first corner and right-click the second."
+  confirm: "&a&lCONFIRM"
+  cancel: "&c&lCANCEL"
+  invoice: "&9Purchase barrier for ${price}? {confirm} &9or {cancel} &9if you don't want to purchase a barrier."
+  cancelConfirmation: "&aRemove barrier? {confirm} &aor {cancel} &aThis action cannot be reversed."
+  selectionTimeout: "&cYou took too long to select your points and the session has timed out."
+  emptySlot: "&cEmpty Slot"

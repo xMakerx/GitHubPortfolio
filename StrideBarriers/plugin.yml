@@ -1,0 +1,16 @@
+name: StrideBarriers
+author: xMakerx
+version: 1.0
+
+main: com.coginvasion.stride.StrideBarriers
+depend: [Factions, WorldEdit, WorldGuard, Vault]
+
+commands:
+  barriers:
+    description: View the barriers menu.
+    permission: stridebarriers.use
+
+permissions:
+  stridebarriers.use:
+    description: Gives a player permission to view available barriers.
+    default: true

@@ -1,0 +1,15 @@
+name: AutoUHCHub
+author: xMakerx
+version: 1.0
+
+main: mc.autouhc.hub.AutoUHCHub
+
+commands:
+  ultrahardcore:
+    aliases: [uhc]
+    description: The base command for UHC commands.
+    permission: uhc.use
+  ultrahardcore creatematch:
+    aliases: [cm]
+    description: Opens the Match Creator to begin match creation.
+    permission: uhc.matchcreator

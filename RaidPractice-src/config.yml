@@ -1,0 +1,44 @@
+# -- RaidPractice v1.9 Configuration File -- #
+teleportItem: COMPASS
+shopItem: EMERALD
+exitItem: MINECART
+respawnSound: ENTITY_EXPERIENCE_ORB_PICKUP
+winSound: ENTITY_PLAYER_LEVELUP
+loseSound: BLOCK_PORTAL_TRIGGER
+tickSound: BLOCK_NOTE_SNARE
+countdownSound: BLOCK_NOTE_PLING
+diedWinPoints: 3
+brokeEggPoints: 10
+aliveWinPoints: 5
+prepareTime: 120
+gameFullPrepareTime: 45
+autoEquipArmor: true
+useWorldSpawn: true
+scoreboards:
+  mainBoard:
+  - '    &b&lRAIDPRACTICE   '
+  - 'Players: &a{onlinePlayers}/{maxPlayers}'
+  - 'Points: &e{points}'
+  - ''
+  - 'Games Played: &e{gamesPlayed}'
+  - 'Games Won: &e{gamesWon}'
+  - 'Games Lost: &e{gamesLost}'
+  - ''
+  - '    &eraidpractice.org'
+  arenaLobbyBoard:
+  - '    &b&lRAIDPRACTICE   '
+  - 'Map: &a{arena}'
+  - 'Players: &a{arenaPlayers}/{arenaMaxPlayers}'
+  - 'Starting in: {arenaStartTime}'
+  - ''
+  - 'Points: &e{points}'
+  - ''
+  - '    &eraidpractice.org'
+  arenaBoard:
+  - '    &b&lRAIDPRACTICE   '
+  - 'Map: &a{arena}'
+  - 'Time Left: &a{arenaTimeLeft}'
+  - ''
+  - 'Points: &e{points}'
+  - ''
+  - '    &eraidpractice.org'

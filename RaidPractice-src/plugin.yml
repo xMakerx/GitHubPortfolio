@@ -1,0 +1,13 @@
+name: RaidPractice
+version: 1.9
+
+author: xMakerx
+main: org.xmakerx.raidpractice.RaidPractice
+depend: [WorldGuard, WorldEdit]
+
+commands:
+  raidpractice:
+    description: The basic command for RaidPractice.
+    aliases: [rp]
+  raidpractice topplayer:
+    description: Displays the top player.
