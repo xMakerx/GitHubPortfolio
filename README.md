@@ -1,5 +1,9 @@
-# DecodedLogic/Maverick Liberty Portfolio
-The projects within this repository are for exhibition purposes only and **aren't** to be seen as open-source and available to all.  
+# Maverick Liberty Portfolio
+Thank you so much for taking the time to view my online portfolio! Before you get settled in, please note that these projects have been done over the years --and as an inquisitive young person I've learned and improved a lot over time and understand that there's still much to learn! Know that you're reviewing the work of someone who brings a positive attitude, patience, creativity, and a passion for gaming, learning, teaching, and all things computers! 
+
+If you have any questions and concerns about a project, myself, or anything else, please shoot me an email at: maverick.liberty29@gmail.com. Once again, thank you so much for taking the time to do an in-depth review of me! 
+
+The projects within this repository are for exhibition purposes only and **aren't** to be seen as open-source and available to all for general use purposes.
 
 ## Project Index
 1. AutoUHCHub (A large-scale automatic ultra hardcore hub for BungeeCord)
