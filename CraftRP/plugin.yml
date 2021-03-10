@@ -1,0 +1,6 @@
+name: CraftRP
+version: 1.0
+author: xMakerx/DecodedLogic
+
+main: mc.decodedlogic.craftrp.CraftRP
+api-version: 1.13

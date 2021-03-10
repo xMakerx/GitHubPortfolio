@@ -1,0 +1,133 @@
+NotifyLevel: INFO
+UseStackedHealth: false
+SetSpawnerMobsPassive: true
+ShowDefaultCmdHelp: false
+StackRadius: 40.0
+SpawnerStackLimit: 999
+EntityStackLimit: 500
+SpawnerMergeRadius: 40
+ClearLegacyEntities: true
+FirstSpawnDelaySeconds: 20.0
+
+SpawnerData:
+    PIG:
+        firstUpgrade:
+            icon: IRON_INGOT
+            cost: 20.0
+        secondUpgrade:
+            icon: DIAMOND
+            cost: 100.0
+            description:
+                - "&6* &e&lPrice &f%cost% &7(x%amount% Spawners)"
+                - "&6* &e&lDrop Type &f%upgrade%"
+                - "&6* &eThis is obviously the best upgrade."
+            slot: 0
+            
+KillOptions:
+    - "LAVA"
+    - "FALL"
+            
+ButtonData:
+    UpgradePage:
+        Name: "&e[!] &6%spawnerType% Info:"
+        Description:
+            - "&6* &e&lAMOUNT &7x%amount%"
+            - "&6* &e&lTIER &7%upgrade%"
+            - "&7(Click to upgrade!)"
+        Slot: 13
+        Icon: MOB_SPAWNER
+    WithdrawAll:
+        Name: "&c&lTake All"
+        Description:
+            - "&7(Clicking this will withdraw &b&nall &r&7from stack)"
+        Slot: 9
+        Icon: STAINED_GLASS_PANE:14
+    Withdraw64:
+        Name: "&c&l-64"
+        Description:
+            - "&7(Clicking this will withdraw &b&n64 &r&7from stack)"
+        Slot: 10
+        Icon: STAINED_GLASS_PANE:14
+        Amount: 64
+    Withdraw1:
+        Name: "&c&l-1"
+        Description:
+            - "&7(Clicking this will withdraw &b&n1 &r&7from stack)"
+        Slot: 11
+        Icon: STAINED_GLASS_PANE:14
+    DepositAll:
+        Name: "&a&lDeposit All"
+        Description:
+            - "&7(Clicking this will deposit &b&nall &r&7into stack)"
+        Slot: 17
+        Icon: STAINED_GLASS_PANE:13
+    Deposit64:
+        Name: "&a&l+64"
+        Description:
+            - "&7(Clicking this will deposit &b&n64 &r&7into stack)"
+        Slot: 16
+        Icon: STAINED_GLASS_PANE:13
+        Amount: 64
+    Deposit1:
+        Name: "&a&l+1"
+        Description:
+            - "&7(Clicking this will deposit &b&n1 &r&7into stack)"
+        Slot: 15
+        Icon: STAINED_GLASS_PANE:13
+    UpgradeSlot:
+        Name: "&6%upgrade% Upgrade &7(Click)"
+        Description:
+            - "&6* &e&lPrice &f%cost% &7(x%amount% Spawners)"
+            - "&6* &e&lDrop Type &f%upgrade%"
+        Slot: 11
+    EmptySlot:
+        Name: " "
+        Description: []
+        Slot: 0
+        Icon: STAINED_GLASS_PANE:7
+    Reset:
+        Name: "&c&lRESET"
+        Description:
+            - "&6* &eDouble click to reset spawner to default."
+        Confirmation:
+            - "&6* &eClick again to confirm &c&lRESET&r&e."
+        Slot: 8
+        Icon: BARRIER
+        
+SpawnerItemData:
+    Name: "&6%spawnerType% Spawner"
+    Description:
+        - "&6* &e&lTIER &7%upgrade%"
+        - "&6* &ePlace to start spawning stackable mobs!"
+
+Strings: 
+    MobSpawnerName: "&e%amount%X &6&l%spawnerType% &7(&e%upgrade%&7)"
+    UpgradeDisplayName: "&6%upgrade% Upgrade"
+    EntityDisplayName: "&e%amount%X &6%spawnerType% &7(%upgrade%)"
+    AddRemovePageName: "&aAdd &7| &cRemove &8%spawnerType%"
+    UpgradePageName: "&eUpgrade &7| &8%spawnerType% Spawner"
+    UpgradeMade: "&e[!] You upgraded the spawner to &6&n%upgrade%&r&e for &b$%cost%&e!"
+    DepositMade: "&e[!] You deposited &n%amount%x&r &6%spawnerType%&e into the stack!"
+    WithdrawMade: "&e[!] You withdrew &n%amount%x&r &6%spawnerType%&e from the stack!"
+    GaveSpawners: "&aGave &b%player%&a &n%amount%&r&a spawners with &n%upgrade%&r&a Upgrade!"
+    PlayerNotFound: "&cError: &4Could not find the specified Player &n%player%&r&4."
+    UnknownData: "&cError: &4The specified argument &n%data%&r&4 is unknown."
+    NoPermission: "&cError: &4You don't have permission to execute that command!"
+    WithdrawCorrectly: "&cError: &4You must withdraw your spawners through the GUI!"
+    NoMoney: "&cError: &4You cannot afford to purchase that upgrade!"
+    Downgrade: "&cError: &4You cannot downgrade!"
+    NothingToDeposit: "&cError: &4You don't have any spawners to deposit!"
+    ClearedEntities: "&a[Stacked-Entities have been cleared.]"
+    ClearCommandFeedback: "&a[Cleared &9&l%cleared%&r&a entities!]"
+    SpawnerReset: "&aYou have successfully reset the spawner to &eDefault&a!"
+    InspectorEnabled: "&aYou have enabled spawner inspector mode."
+    InspectorDisabled: "&cYou have disabled spawner inspector mode."
+    NoNearbyData: "&7Could not find any nearby spawners with data."
+    RadiusError: "&7Out of bounds. Choose a radius between 1 and 500."
+    NoBlockData: "&7That location doesn't have any data :("
+    SpawnerMerged: "&aYour spawner has been merged with a nearby spawner for performance reasons."
+    AlreadyPurchased:
+        - ""
+        - "&a&lALREADY PURCHASED"
+        - ""
+

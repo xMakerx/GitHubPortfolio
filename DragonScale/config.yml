@@ -1,0 +1,91 @@
+# The Dragon Scale configuration file
+DragonScaleName: '&6&lDragon Scale Pickaxe'
+DragonScaleLore: ['&6Level: &7{LEVEL}', '&6Exp: &7{EXP}&8/&c{NEEDEDEXP}']
+
+LevelUpBroadcast: "&6&l{PLAYER}&r&e's pickaxe has reached &bLevel {LEVEL}&e!"
+LootBoxOpen: "&eYou found &c{AMOUNT} {ITEM}&e!"
+
+LootBoxData:
+    Name: '&6&lLoot Box'
+    Lore: ['&dPlace for random loot!']
+    Chance: 50
+    Loot:
+      DIAMOND:
+        Chance: 50
+        Amount: 1-6
+      DIAMOND_SWORD:
+        Chance: 30
+        Amount: 1
+        Enchantments:
+           KNOCKBACK: 4
+           DAMAGE_ALL: 4
+      STRING:
+        Chance: 100
+        Amount: 1-3
+
+# The default chances for the specified enchantments to occur.
+VeinminerChance: 0.05
+ExplodeChance: 0.05
+
+# The experience blocks give when mined.
+ExpOres:
+    - 'COAL_ORE 5'
+    - 'IRON_ORE 20'
+    - 'PRISMARINE 10'
+    - 'DIRT 15'
+    - 'WOOD:3 25'
+    - 'STONE 1'
+    - 'DIAMOND_ORE 30'
+    - 'GOLD_ORE 12'
+    - 'LAPIS_ORE 15'
+    - 'EMERALD_ORE 40'
+    - 'REDSTONE_ORE 8'
+    - 'LEGACY_GLOWING_REDSTONE_ORE 8'
+
+# The experience needed to get to the next level.
+NeededExp:
+    - 100
+    - 200
+    - 300
+    - 400
+    - 500
+    - 600
+    - 700
+    - 800
+    - 900
+    - 1000
+
+# Sounds to play when certain events happen.
+Sounds:
+    ITEM_DROPPED: ENTITY_CHICKEN_EGG:0.3
+    EXP_PICKUP: ENTITY_EXPERIENCE_ORB_PICKUP
+    LEVEL_UP: ENTITY_PLAYER_LEVELUP
+    PICKAXE_EQUIP:  BLOCK_ANVIL_LAND
+    PICKAXE_DEQUIP: BLOCK_METAL_PRESSURE_PLATE_CLICK_OFF
+    LOOTBOX_PICKUP: BLOCK_NOTE_BLOCK_HARP
+    LOOTBOX_OPEN: BLOCK_CHEST_OPEN
+
+# This specifies upgrades.
+Upgrades:
+    2:
+     pickaxe: WOODEN_PICKAXE
+     enchantments:
+        loot_bonus_blocks: 1
+     effects:
+        night_vision: 1
+    13:
+     pickaxe: IRON_PICKAXE
+     enchantments:
+        vein_miner: 1
+     effects:
+        night_vision: 1
+    15:
+     pickaxe: DIAMOND_PICKAXE
+     enchantments:
+        explode: 2
+     effects:
+        night_vision: 2
+        fast_digging: 2
+        
+# The maximum level that can be achieved.
+MaxLevel: 100

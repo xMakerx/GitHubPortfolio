@@ -1,0 +1,15 @@
+name: GucciIslandTop
+version: 2.3.3
+description: SkyBattles' own island top GUI!
+author: xMakerx/DecodedLogic
+
+depend: [ASkyBlock]
+softdepend: [GucciUSpawners]
+
+main: mc.decodedlogic.gucciislandtop.IslandTop
+
+commands:
+   island worth:
+      description: Checks the worth of the island a player is currently on.
+      aliases: is worth
+      usage: /island worth

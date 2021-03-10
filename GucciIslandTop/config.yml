@@ -1,0 +1,297 @@
+NotifyLevel: INFO
+TopIslandSlots: [9, 10, 11, 12, 13, 14, 15, 16, 17, 19, 20, 21, 22, 23, 24, 25]
+DisplayTopIslands: 16
+FillEmptySlots: true
+CalculateTopIslandsEvery: 1800
+
+IslandElementData:
+    Name: "&e[!] &6&n%player%&r &7(#%rank%)"
+    Description:
+       - ""
+       - "&6* &e&lIsland Level &r&7%level%"
+       - ""
+       - "&6* &e&lPlace &r&7#%rank%"
+       - "&6* &e&lWorth &r&7$%worth%"
+       - ""
+       - "&6* &e&lMembers:"
+       - "%memberList%"
+       - ""
+       - "&7(Click to view their items)"
+    Icon: SKULL_ITEM:3
+    Slot: 40
+       
+EmptySlotElementData:
+    Name: " "
+    Description: []
+    Slot: 0
+    Icon: STAINED_GLASS_PANE:7
+    
+SpawnerElementData:
+    Name: "&6&lSPAWNERS&r &e->"
+    Description: []
+    Slot: 1
+    Icon: MOB_SPAWNER
+    
+ItemElementData:
+    Name: "&6&lITEMS&r &e->"
+    Description: []
+    Slot: 28
+    Icon: BOOK_AND_QUILL
+       
+UnknownPlayerElementData:
+    Name: "&cNo Island"
+    Description:
+       - "&7Could this island be you one day?"
+    HeadName: "MHF_Question"
+    Icon: SKULL_ITEM:3
+
+Strings:
+    Default: "&7Default"
+    TopSixteenMenuName: "&8TOP &n16&r &8ISLANDS"
+    IslandMenuName: "&8%player% &n$%worth%"
+    IslandMemberEntry: " &f- &7%player%"
+    Calculating: "&cCalculating..."
+    Valuable: "&e[!] &7%name%"
+    Quantity: "  &6&l* &e&lQuantity &f%quantity%"
+    Attribute: "%name%&r &7(%quantity%x)"
+    TotalWorth: "&e&lTOTAL VALUE &f$%worth%"
+    Worth: "  &6&l* &e&lValue &f$%worth% &7($%each% ea)"
+    PlayerNotFound: "&cError: &4Player &b%player% &4was not found!"
+    CalculatingBroadcast:
+        - ""
+        - "&2----------------[ &aCalculating... &2]----------------"
+        - "&eCalculating most valuable island out of &6&l%amount%&r&e."
+        - ""
+        - "&f&lPLEASE WAIT..."
+        - "&2---------------------------------------------"
+        - ""
+    CalculatingDoneBroadcast:
+        - ""
+        - "&2--------------[ &aCalculating Done! &2]--------------"
+        - "&eServer worth: &6$%total_worth%&e."
+        - ""
+        - "&f&lTop islands have been updated!"
+        - "&2---------------------------------------------"
+        - ""
+
+Valuables:
+    COW_SPAWNER:
+       Name: "Cow Spawner"
+       Worth: 1000.0
+       Block: MOB_SPAWNER:92
+       Slot: 11
+       HeadName: "MHF_Cow"
+       Icon: SKULL_ITEM:3
+    MUSHROOM_COW_SPAWNER:
+       Name: "Mooshroom Spawner"
+       Worth: 4000.0
+       Block: MOB_SPAWNER:96
+    PIG_SPAWNER:
+       Name: "Pig Spawner"
+       Worth: 500.0
+       Block: MOB_SPAWNER:90
+       Attributes:
+          DiamondUpgrade:
+             Name: "&9Diamond Upgrade"
+             Worth: 200.0
+       Slot: 12
+       HeadName: "MHF_Pig"
+       Icon: SKULL_ITEM:3
+    CHICKEN_SPAWNER:
+       Name: "Chicken Spawner"
+       Worth: 1000.0
+       Block: MOB_SPAWNER:93
+       Slot: 13
+       HeadName: "MHF_Chicken"
+       Icon: SKULL_ITEM:3
+    SHEEP_SPAWNER:
+       Name: "Sheep Spawner"
+       Worth: 1250.0
+       Block: MOB_SPAWNER:91
+       Slot: 14
+       HeadName: "MHF_Sheep"
+       Icon: SKULL_ITEM:3
+    WOLF_SPAWNER:
+       Name: "Wolf Spawner"
+       Worth: 1500.0
+       Block: MOB_SPAWNER:95
+    OCELOT_SPAWNER:
+       Name: "Ocelot Spawner"
+       Worth: 1500.0
+       Block: MOB_SPAWNER:98
+    SQUID_SPAWNER:
+       Name: "Squid Spawner"
+       Worth: 1350.0
+       Block: MOB_SPAWNER:94
+    WITCH_SPAWNER:
+       Name: "Witch Spawner"
+       Worth: 1800.0
+       Block: MOB_SPAWNER:66
+    SKELETON_SPAWNER:
+       Name: "Skeleton Spawner"
+       Worth: 2000.0
+       Block: MOB_SPAWNER:51
+       Slot: 5
+       HeadName: "MHF_Skeleton"
+       Icon: SKULL_ITEM:3
+    ZOMBIE_SPAWNER:
+       Name: "Zombie Spawner"
+       Worth: 2000.0
+       Block: MOB_SPAWNER:54
+       Slot: 7
+       HeadName: "MHF_Zombie"
+       Icon: SKULL_ITEM:3
+    GIANT_SPAWNER:
+       Name: "Giant Spawner"
+       Worth: 2500.0
+       Block: MOB_SPAWNER:53
+    HORSE_SPAWNER:
+       Name: "Horse Spawner"
+       Worth: 4000.0
+       Block: MOB_SPAWNER:100
+    IRON_GOLEM_SPAWNER:
+       Name: "Iron Golem Spawner"
+       Worth: 3500.0
+       Block: MOB_SPAWNER:99
+       Slot: 2
+       HeadName: "MHF_Golem"
+       Icon: SKULL_ITEM:3
+    SILVERFISH_SPAWNER:
+       Name: "Silverfish Spawner"
+       Worth: 3200.0
+       Block: MOB_SPAWNER:60
+    CREEPER_SPAWNER:
+       Name: "Creeper Spawner"
+       Worth: 2750.0
+       Block: MOB_SPAWNER:50
+       Slot: 6
+       HeadName: "MHF_Creeper"
+       Icon: SKULL_ITEM:3
+    SPIDER_SPAWNER:
+       Name: "Spider Spawner"
+       Worth: 2500.0
+       Block: MOB_SPAWNER:52
+       Slot: 4
+       HeadName: "MHF_Spider"
+       Icon: SKULL_ITEM:3
+    CAVE_SPIDER_SPAWNER:
+       Name: "Cave Spider Spawner"
+       Worth: 2650.0
+       Block: MOB_SPAWNER:59
+    SLIME_SPAWNER:
+       Name: "Slime Spawner"
+       Worth: 2850.0
+       Block: MOB_SPAWNER:55
+       Slot: 15
+       HeadName: "MHF_Slime"
+       Icon: SKULL_ITEM:3
+    WITHER_SPAWNER:
+       Name: "Wither Spawner"
+       Worth: 5000.0
+       Block: MOB_SPAWNER:64
+    ENDERMAN_SPAWNER:
+       Name: "Enderman Spawner"
+       Worth: 4250.0
+       Block: MOB_SPAWNER:58
+    ENDER_DRAGON_SPAWNER:
+       Name: "Ender Dragon Spawner"
+       Worth: 8000.0
+       Block: MOB_SPAWNER:63
+    BAT_SPAWNER:
+       Name: "Bat Spawner"
+       Worth: 3000.0
+       Block: MOB_SPAWNER:65
+    BLAZE_SPAWNER:
+       Name: "Blaze Spawner"
+       Worth: 4800.0
+       Block: MOB_SPAWNER:61
+       Slot: 3
+       HeadName: "MHF_Blaze"
+       Icon: SKULL_ITEM:3
+    GHAST_SPAWNER:
+       Name: "Ghast Spawner"
+       Worth: 5000.0
+       Block: MOB_SPAWNER:56
+    PIG_ZOMBIE_SPAWNER:
+       Name: "Zombie Pigman Spawner"
+       Worth: 4500.0
+       Block: MOB_SPAWNER:57
+       Slot: 16
+       HeadName: "MHF_PigZombie"
+       Icon: SKULL_ITEM:3
+    MAGMA_CUBE_SPAWNER:
+       Name: "Magma Cube Spawner"
+       Worth: 3000.0
+       Block: MOB_SPAWNER:62
+    DIAMOND_BLOCK:
+       Name: "Diamond Block"
+       Worth: 8000.0
+       Block: DIAMOND_BLOCK
+       Slot: 33
+    EMERALD_BLOCK:
+       Name: "Emerald Block"
+       Worth: 10000.0
+       Block: EMERALD_BLOCK
+       Slot: 34
+    IRON_BLOCK:
+       Name: "Iron Block"
+       Worth: 5000.0
+       Block: IRON_BLOCK
+       Slot: 31
+    GOLD_BLOCK:
+       Name: "Gold Block"
+       Worth: 6500.0
+       Block: GOLD_BLOCK
+       Slot: 32
+    HOPPER:
+       Name: "Hopper"
+       Worth: 8000.0
+       Block: HOPPER
+       Slot: 29
+    DRAGON_EGG:
+       Name: "Dragon Egg"
+       Worth: 12500.0
+       Block: DRAGON_EGG
+       Slot: 40
+    BEDROCK:
+       Name: "Bedrock"
+       Worth: 7500.0
+       Block: BEDROCK
+       Slot: 38
+    CHEST:
+       Name: "Chest"
+       Worth: 2000.0
+       Block: CHEST
+       Slot: 41
+    TRAPPED_CHEST:
+       Name: "Trapped Chest"
+       Worth: 2500.0
+       Block: TRAPPED_CHEST
+       Slot: 42
+    ENCHANTMENT_TABLE:
+       Name: "Enchantment Table"
+       Worth: 7500.0
+       Block: ENCHANTMENT_TABLE
+       Slot: 43
+    ENDERCHEST:
+       Name: "Enderchest"
+       Worth: 8000.0
+       Block: ENDER_CHEST
+       Slot: 39
+    BEACON:
+       Name: "Beacon"
+       Worth: 10000.0
+       Block: BEACON
+       Slot: 30
+    SPONGE:
+       Name: "Sponge"
+       Worth: 5000.0
+       Block: SPONGE
+    ENDER_PORTAL_FRAME:
+       Name: "End Portal Frame"
+       Worth: 7500.0
+       Block: ENDER_PORTAL_FRAME
+    HAY_BLOCK:
+       Name: "Hay Block"
+       Worth: 500.0
+       Block: HAY_BLOCK

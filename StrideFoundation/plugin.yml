@@ -1,0 +1,26 @@
+name: StrideFoundation
+version: 1.0
+author: xMakerx
+
+main: net.stridefactions.foundation.StrideFoundation
+softdepend: [HolographicDisplays, Vault]
+
+commands:
+  pot:
+    description: Use the moneypot.
+    permission: stride.moneypot.use
+    aliases: [foundation]
+
+permissions:
+  stride.moneypot.use:
+    default: true
+    description: Gives a player permission to use the money pot.
+  stride.moneypot.admin:
+    default: false
+    description: Gives a player permission to use the admin commands of the money pot.
+  stride.moneypot.*:
+    default: op
+    children:
+      - stride.moneypot.use
+      - stride.moneypot.admin
+    description: Gives a player full access to the StrideFoundation plugin.

@@ -1,0 +1,20 @@
+name: DragonScale
+version: 1.9
+author: xMakerx/DecodedLogic
+description: A custom pickaxe leveling plugin for Dragon's Keep.
+
+main: liberty.maverick.dragonscale.DragonScale
+softdepend: [WorldGuard]
+api-version: 1.15
+
+commands:
+    pickaxe:
+       description: Modify a player's data.
+       permission: pickaxe.admin
+       usage: |
+         /pickaxe <add, remove, set> <player> <xp/level> <amount> - Modifies a player's data.
+         /pickaxe give <player> - Gives the specified player the plugin pickaxe.
+    pickaxe reload:
+       description: Reloads the plugin's configuration.
+       permission: pickaxe.admin
+       usage: /pickaxe reload

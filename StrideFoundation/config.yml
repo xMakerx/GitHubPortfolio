@@ -1,0 +1,85 @@
+##################################################
+# - StrideFoundation [v1.0] Configuration File - #
+#     Created by xMakerx for StrideFactions    - #
+##################################################
+
+# The maximum amount of money the pot can hold.
+moneyPotSize: 500
+
+# How many blocks up holograms are from the block where placed.
+hologramHeight: 3
+
+# How long to do the effects (in seconds).
+effectTime: 5
+
+# How long until the money pot resets (in seconds).
+resetTime: 20
+
+# These are the sounds that are to be used.
+sounds:
+  gui_open: DOOR_OPEN
+  money_sent: LEVEL_UP
+  pot_full: ENDERDRAGON_DEATH
+
+# These are the items that are going to be used with the plugin.
+items:
+  progress:
+    displayName: "&a&lMoney Progress"
+    material: STAINED_GLASS_PANE
+    durability: 5
+    lore:
+      - "&f{progressBar} {progress}"
+      - " "
+      - "&fMoney Goal &a&l$ &r&f{goal}"
+      - "&fAdd to the foundation and help the server"
+      - "&fearn unique rewards!"
+  add_1:
+    displayName: "&a&lAdd $ &r&f1"
+    material: EMERALD
+  add_5:
+    displayName: "&a&lAdd $ &r&f5"
+    material: EMERALD
+    amount: 5
+  add_25:
+    displayName: "&a&lAdd $ &r&f25"
+    material: EMERALD
+    amount: 25
+  add_1000:
+    displayName: "&a&lAdd $ &r&f1000"
+    material: EMERALD
+    amount: 64
+    enchanted: true
+  effect_01:
+    # DO NOT CHANGE THE NAME OF THIS ITEM.
+    displayName: "NO_PICKUP"
+    material: DOUBLE_PLANT
+  effect_02:
+    # DO NOT CHANGE THE NAME OF THIS ITEM.
+    displayName: "NO_PICKUP"
+    material: EMERALD
+
+hologram:
+  title: "&a&lMoney Foundation"
+  lore:
+    - "{progressBar} {progress}"
+
+# The commands that are executed as the foundation gets larger.
+commands:
+  20:
+   - "give {player} tnt 64"
+
+# The messages that are to be used with the plugin.
+messages:
+  mustBePlayer: "&cError: &4You must be a player to execute that command."
+  noPermission: "&cError: &4You don't have permission to execute that command."
+  mustBeOnGround: "&cError: &4You must be on the ground to create a hologram."
+  noHolograms: "&cError: &4No holograms could be found at your location. Make sure to stand at ground level."
+  cantAfford: "&cSorry! You can't afford that payment!"
+  moneySent: "&a&lSUCCESS! &r&fSent a payment of &a&l${payment} &r&fto the money foundation."
+  hologramCreated: "&a&lSUCCESS! &r&fCreated a money foundation hologram."
+  hologramDeleted: "&a&lSUCCESS! &r&fDeleted the hologram at your location."
+  moneyPotReset: "&a&lSUCCESS! &r&fReset the money pot!"
+  setBlock: "&a&lSUCCESS! &r&fSet the block you're standing on as the effect block."
+  menuTitle: "&lMONEY FOUNDATION"
+  progress: "Progress:"
+  progressPerct: "&7({progress}%)"
