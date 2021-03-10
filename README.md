@@ -106,4 +106,4 @@ Playground Battle (By far the most famous Cog Invasion Online video)
 
 -------------------------------------------------------------------------------------------------
 ### This list isn't exhaustive!
-Make sure to browse the `screenshots` folders to see more screenshots and images of each project. Source code is provided to sort through. 
+Make sure to browse the `screenshots` folders to see more screenshots and images of each project. Source code is provided to sift through. 
