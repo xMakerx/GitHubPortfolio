@@ -7,7 +7,7 @@ The projects within this repository are for exhibition purposes only and **aren'
 
 ## Project Index
 1. AutoUHCHub (A large-scale automatic ultra hardcore hub for BungeeCord)
-2. Cog Invasion Online (screenshots & Java launcher and login server programs only)
+2. Cog Invasion Online (screenshots & Java launcher and login server program source codes only)
   2a. Login Server **Java** project that utilitizes MySQL and HikariCP to handle login traffic.
   2b. Launcher (**Java** project that connects to a host (*Login Server*) and allows users to login and download necessary game files)
 3. CraftRP (An incomplete Minecraft adaptation of Garry's Mod's DarkRP gamemode)
@@ -42,6 +42,8 @@ The projects within this repository are for exhibition purposes only and **aren'
 ## Cog Invasion Online
 *A **Disney's Toontown Online** multiplayer fan-game developed from-scratch between 2015 and 2019 using the **Panda3D** game engine. While it did feature a public Alpha release,
 development was canceled after internal staff disagreements and unrealistic ambitions.*
+
+**NOTE: I also worked on the core game tremendously as well! The game has been open-sourced over at: https://github.com/Cog-Invasion-Online** Most of the game is done in Python, so for Java related code look at the login server and launcher programs primarily.
 
 ### Summary
 A 3D non-profit multiplayer fan-game based off of **Disney's Toontown Online**. Players (Toons) battle the Cogs (evil robots that try to make the player go sad) and play fun minigames!
